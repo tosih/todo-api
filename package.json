@@ -1,0 +1,44 @@
+{
+  "name": "todo-api",
+  "version": "1.0.0",
+  "description": "A NodeJS demo ToDo application",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tosih/todo-api.git"
+  },
+  "keywords": [
+    "react",
+    "babel",
+    "express",
+    "nodejs",
+    "ES6",
+    "docker"
+  ],
+  "scripts": {
+    "prestart": "npm run migrate",
+    "start": "node index.js",
+    "migrate": "echo 'No migrations to run.'",
+    "test": "mocha test"
+  },
+  "author": "Sohail Ahmed",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tosih/todo-api/issues"
+  },
+  "homepage": "https://github.com/tosih/todo-api#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "cors": "^2.8.1",
+    "express": "4.14.0",
+    "mongoose": "^4.7.2"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0",
+    "sinon": "^1.17.7"
+  },
+  "directories": {
+    "test": "test"
+  }
+}
