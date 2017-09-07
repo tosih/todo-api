@@ -13,6 +13,8 @@ const mongoHost = process.env.MONGODB_HOST || 'localhost:27017'
 const appInfo = require('./package.json')
 const launched = new Date()
 
+console.log(host,port,mongoHost);
+
 mongoose.connect(`mongodb://${mongoHost}/todo`)
 mongoose.connection.on('error', () => {
   console.log('ERROR: Unable to connect to MongoDB... retrying')
